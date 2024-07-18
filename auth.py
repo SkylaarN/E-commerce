@@ -44,6 +44,7 @@ def register():
 
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
+    error = None
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -62,11 +63,13 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-
-        return redirect(url_for('index'))
+#####
+        return redirect(url_for('blog.index'))
     
-    flash(error)
+    if error != None: flash(error)
+
     return render_template('auth/login.html')
+
 
 
 @bp.before_app_request
@@ -84,7 +87,7 @@ def load_logged_in_user():
 @bp.route('/logout')
 def logout():
     session.clear()
-    return redirect(url_for('index'))
+    return redirect(url_for('auth.login'))
 
 
 def login_required(view):

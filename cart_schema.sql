@@ -1,0 +1,23 @@
+DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS amdin;
+DROP TABLE IF EXISTS catalogue;
+
+CREATE TABLE user (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE amdin (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE catalogue (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    cartegory TEXT NOT NULL,
+    product_name TEXT NOT NULL,
+    price TEXT NOT NULL,
+    description TEXT NOT NULL
+);
