@@ -17,6 +17,7 @@ def create_app(test_config=None):
         app.config.from_pyfile('config.py', silent=True)
     else:
         # load the test config if passed in
+        print("t1")
         app.config.from_mapping(test_config)
     
     # ensure the instance folder exists
@@ -36,9 +37,9 @@ def create_app(test_config=None):
     from . import auth
     app.register_blueprint(auth.bp)
 
-    from . import blog
-    app.register_blueprint(blog.bp)
-    app.add_url_rule('/blog', endpoint='index')
+    # from . import blog
+    # app.register_blueprint(blog.bp)
+    # app.add_url_rule('/blog', endpoint='index')
 
     from . import catalogue
     app.register_blueprint(catalogue.bp)
