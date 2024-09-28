@@ -1,0 +1,41 @@
+.body-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-section {
+    margin-top: 5%;
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+}
+
+.fuck {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+
+.fields {
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 8px;
+    text-align: center;
+}
+
+.fields-1, .title {
+    text-align: center;
+    color: darkgreen;
+    min-width: 100%;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.flash {
+    color: red;
+}
