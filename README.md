@@ -7,3 +7,6 @@ Starting the app:
     * open debug  mode export FLASK_DEBUG=1
     * initialise the database = flask init-db
     * start the server = flask run
+
+to login as admin
+    *url=http://127.0.0.1:5000/auth/admin

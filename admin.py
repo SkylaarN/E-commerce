@@ -7,6 +7,7 @@ from .db import get_db
 
 bp = Blueprint('admin', __name__, url_prefix="/admin")
 
+
 @bp.route("/dashboard", methods=("GET", "POST"))
 def catalogue():
     db = get_db()
