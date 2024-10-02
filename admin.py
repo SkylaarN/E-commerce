@@ -19,7 +19,7 @@ def catalogue():
 
 
 @bp.route('/create', methods=('GET', 'POST'))
-@login_required
+# @admin_login_required
 def create():
     if request.method == 'POST':
         cartegory = request.form['cartegory']

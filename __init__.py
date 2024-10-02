@@ -43,9 +43,9 @@ def create_app(test_config=None):
 
     from . import catalogue
     app.register_blueprint(catalogue.bp)
-    app.add_url_rule('/', endpoint='index')
+    # app.add_url_rule('/', endpoint='cool')
 
-    # from . import admin
-    # app.register_blueprint(admin.bp)
+    from . import admin
+    app.register_blueprint(admin.bp)
     
     return app

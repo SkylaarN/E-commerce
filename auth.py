@@ -137,7 +137,7 @@ def admin_login():
             flash(error)
             return redirect(url_for('auth.admin_login'))
         
-        return redirect(url_for('catalogue.create'))
+        return redirect(url_for('admin.create'))
 
     return render_template('auth/admin_login.html')
 

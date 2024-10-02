@@ -4,7 +4,7 @@ from flask import (
 from werkzeug.exceptions import abort
 from .auth import login_required, admin_login_required
 from .db import get_db
-bp = Blueprint('catalogue', __name__, url_prefix='/product')
+bp = Blueprint('catalogue', __name__, url_prefix='/')
 
 @bp.route("/", methods=("GET", "POST"))
 def catalogue():
