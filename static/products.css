@@ -1,0 +1,52 @@
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+.body-container {
+    /* display: flex; */
+}
+
+.main-section {
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+}
+
+.product {
+    float: left;
+    margin: 15px;
+    
+    align-content: center;
+}
+
+.try {
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    border: 2px #ccc solid;
+    border-radius: 15px;
+    justify-content: space-around;
+    padding: 15px;
+}
+.btn {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.btn-1, .btn-2 {
+    border: 1px black solid;
+    border-radius: 15px;
+}
+.btn-1 {
+    background-color: green;
+    color: white;
+    width: 20%;
+}
+.btn-2 {
+    background-color: red;
+    color: white;
+    width: 20%;
+}
