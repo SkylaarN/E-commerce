@@ -1,7 +1,5 @@
 env/
 
-virtualenv/
-
 *.pyc
 __pycache__/
 
